@@ -1,6 +1,6 @@
 from pymongo import MongoClient
 
-client = pymongo.MongoClient("mongodb+srv://alexjj:MY2egZ9YCf7b%23mVBhu22@atlas-g6yq2.mongodb.net/test?retryWrites=true&w=majority")
+client = MongoClient("mongodb+srv://alexjj:MY2egZ9YCf7b%23mVBhu22@atlas-g6yq2.mongodb.net/test?retryWrites=true&w=majority")
 
 recipes = client['twilio']['recipes']
 
