@@ -21,7 +21,10 @@ def reply_with_recipe_info():
     response.message(message)
     return str(response)
 
-
+@app.route("/test")
+def bot_response():
+        user_input = request.args.get('msg').lower()
+        return "Your message was: {}".format(msg)
 
 if __name__ == "__main__":
     app.run()
